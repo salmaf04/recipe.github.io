@@ -1,0 +1,97 @@
+body {
+    background-color:hsl(30, 54%, 90%);
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*div de la receta*/
+.firstdiv {
+    background-color:hsl(0, 0%, 100%);
+    width: 50%;
+    min-height: 90vh;
+    margin: auto;
+    padding: 5%;
+    border-radius: 2%;
+    color: hsl(30, 10%, 34%);
+    font-family: 'Outfit', sans-serif;
+       
+}
+
+img {  
+    width: 100%;
+    border-radius: 2%;
+}
+
+h1{
+    color: hsl(24, 5%, 18%);
+    font-weight: 700;
+    font-family: 'Young Serif', serif;
+}
+/*div del tiempo de preparación*/
+.seconddiv {
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 2%;
+    width: 90%;
+    padding: 10px;
+}
+
+/*Definir borde inferior que divide las secciones*/
+hr{
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+h3 {
+    color: hsl(332, 51%, 32%); 
+    font-family: 'Outfit', sans-serif;
+}
+
+h2 {
+    color:hsl(14, 45%, 36%);
+    font-family: 'Young Serif', serif;
+}
+
+span {
+    font-weight: 600;
+}
+
+/*Definir espacio entre el marcador y el texto en la lista*/
+ol li, ul li {
+    padding-left: 10px;
+}
+
+/*Color de los marcadores de las listas*/
+ol li::marker, ul li::marker  {
+    color:hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+/*Margen de cada celda*/
+th, td{
+    padding: 5px;
+}
+ /*Modificar segunda columna de la tabla (contenido th)*/
+th{
+    color: hsl(14, 45%, 36%);
+    text-align: left; 
+}
+
+/*Dividir las filas de la tabla*/
+tr {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+/*Vista en móviles*/
+@media  screen and (max-width: 800px) {
+    .firstdiv{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0%;
+    }
+}
